@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<games>
+    <game cim="GTA" ev="2014" kiado="Rockstar" mufaj="Open World" platform="PC,XBOX,PlayStation"/>
+    <game cim="Fortnite" ev="2013" kiado="Epic Games" mufaj="Epic Games" platform="PC,XBOX,PlayStation"/>
+    <game cim="Warzone" ev="2017" kiado="Activison" mufaj="Battle Royale" platform="PC,XBOX,PlayStation"/>
+    <game cim="Need For Speed Most Wanted" ev="2010" kiado="Electronic Arts" mufaj="Open World" platform="PC,XBOX,PlayStation,Switch,Mobile"/>
+</games>

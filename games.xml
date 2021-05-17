@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<games>
+    <game cim="Counter-Strike: Global Offensive" ev="2012" kiado="Valve Corporation" mufaj="FPS" platform="PC,XBOX,PlayStation"/>
+    <game cim="Super Mario" ev="1985" kiado="Nintendo" mufaj="Oldalnézetes" platform="Switch,Mobile"/>
+    <game cim="Rise of The Tomb Raider" ev="2015" kiado="Square Enix" mufaj="Akció-kaland" platform="PC,XBOX,PlayStation"/>
+    <game cim="Forza Horizon 4" ev="2018" kiado="Xbox Game Studios" mufaj="Autóversenyzős" platform="PC,XBOX"/>
+    <game cim="Tom Clancy's Rainbow Six Siege" ev="2015" kiado="Ubisoft" mufaj="FPR" platform="PC,XBOX,PlayStation"/>
+    <game cim="Valorant" ev="2020" kiado="Riot Games" mufaj="FPS" platform="PC"/>
+    <game cim="Candy Crush Saga" ev="2012" kiado="King" mufaj="Platform" platform="PC,Mobile"/>
+    <game cim="Gardenscapes" ev="2016" kiado="Playrix Entertainment" mufaj="Platform" platform="Mobile"/>
+    <game cim="Resident Evil 8: Village" ev="2021" kiado="Capcom" mufaj="Horror" platform="PC,XBOX,PlayStation"/>
+    <game cim="Metin2" ev="2004" kiado="Webzen Inc." mufaj="MMORPG" platform="PC"/>
+    <game cim="Tetris" ev="1984" kiado="Nintendo" mufaj="Arcade" platform="Mobile"/>
+    <game cim="Microsoft Flight Simulator" ev="2020" kiado="Microsoft" mufaj="Szimulátor" platform="Pc,XBOX"/>
+    <game cim="Forge of Empires" ev="2012" kiado="InnoGames" mufaj="Stratégiai" platform="PC,Mobile"/>
+    <game cim="Cyberpunk 2077" ev="2020" kiado="CD Projekt" mufaj="Szerep,Akció-kalad" platform="PC,XBOX,PlayStation"/>
+</games>

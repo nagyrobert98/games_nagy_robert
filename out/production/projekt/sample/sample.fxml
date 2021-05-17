@@ -1,0 +1,95 @@
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2">
+        <padding>
+            <Insets bottom="10" top="10" left="10" right="10"/>
+        </padding>
+        <Label text="Keresés"/>
+        <HBox>
+            <VBox>
+                <padding>
+                    <Insets bottom="10"/>
+                </padding>
+                <TextField fx:id="keresesMezo" prefWidth="400" promptText="Kereséshez írjon ide..."/>
+            </VBox>
+            <VBox>
+                <padding>
+                    <Insets right="50"/>
+                </padding>
+                <ComboBox fx:id="keresoLista" onAction="#kezelo2" prefWidth="150" promptText="Műfaj">
+                </ComboBox>
+            </VBox>
+            <Button text="Feltételek törlése" onAction="#feltetelekTorlese" textAlignment="CENTER"/>
+        </HBox>
+        <HBox spacing="20">
+            <CheckBox fx:id="checkMezo1" text="PC" onAction="#kezelo1" />
+            <CheckBox fx:id="checkMezo2" text="XBOX" onAction="#kezelo1"/>
+            <CheckBox fx:id="checkMezo3" text="PlayStation" onAction="#kezelo1"/>
+            <CheckBox fx:id="checkMezo4" text="Switch" onAction="#kezelo1"/>
+            <CheckBox fx:id="checkMezo5" text="Mobile" onAction="#kezelo1"/>
+        </HBox>
+
+    </VBox>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <padding>
+            <Insets left="10"/>
+        </padding>
+    <TableView fx:id="tablazat" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="cimMezo" text="Cím" />
+            <TableColumn fx:id="evMezo" text="Év"/>
+            <TableColumn fx:id="kiadoMezo" text="Kiadó"/>
+            <TableColumn fx:id="mufajMezo" text="Műfaj"/>
+            <TableColumn fx:id="platformMezo"/>
+        </columns>
+    </TableView>
+    </VBox>
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="1" alignment="CENTER" spacing="100">
+        <Button text="Törlés" onAction="#torlesInditas" textAlignment="CENTER"/>
+        <Button text="Hozzáadás" onAction="#jatekFelvetel" textAlignment="CENTER"/>
+    </VBox>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2" fx:id="vbox1" visible="false">
+        <padding>
+            <Insets left="10" bottom="10"/>
+        </padding>
+        <Label text="Hozzáadás:"/>
+        <HBox>
+            <TextField fx:id="cimHozzaad" prefWidth="200" promptText="Cím"/>
+            <TextField fx:id="evHozzaad" prefWidth="55" promptText="Év"/>
+            <TextField fx:id="kiadoHozzaad" prefWidth="200" promptText="Kiadó"/>
+            <ComboBox fx:id="hozzaadLista" prefWidth="200" promptText="Műfaj">
+            </ComboBox>
+        </HBox>
+        <HBox spacing="20">
+            <padding>
+                <Insets top="10"/>
+            </padding>
+            <CheckBox fx:id="checkMezo6" text="PC" />
+            <CheckBox fx:id="checkMezo7" text="XBOX"/>
+            <CheckBox fx:id="checkMezo8" text="PlayStation"/>
+            <CheckBox fx:id="checkMezo9" text="Switch"/>
+            <CheckBox fx:id="checkMezo10" text="Mobile"/>
+        </HBox>
+    </VBox>
+    <VBox GridPane.rowIndex="2" GridPane.columnIndex="1" alignment="BASELINE_CENTER">
+        <Button fx:id="hozzaadGomb" text="+" GridPane.columnIndex="1"
+                GridPane.rowIndex="2" onAction="#jatekVeglegesites" visible="false">
+            <font>
+                <Font size="20"/>
+            </font>
+        </Button>
+    </VBox>
+</GridPane>
